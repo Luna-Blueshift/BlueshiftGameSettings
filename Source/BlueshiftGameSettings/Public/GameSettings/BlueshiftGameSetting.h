@@ -25,7 +25,7 @@ class BLUESHIFTGAMESETTINGS_API UBlueshiftGameSetting
 	GENERATED_BODY()
 
 public:
-	UFUNCTION(BlueprintCallable, Category = "Settings")
+	UFUNCTION(BlueprintCallable, Category = "Settings", meta = (DeterminesOutputType = "Class"))
 	static UBlueshiftGameSetting* GetGameSettingCDO(const TSubclassOf<UBlueshiftGameSetting> Class)
 	{
 		return GetMutableDefault<UBlueshiftGameSetting>(Class);
