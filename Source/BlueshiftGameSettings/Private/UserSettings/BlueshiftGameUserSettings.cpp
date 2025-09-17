@@ -277,7 +277,10 @@ UBlueshiftBPGameUserSettings* UBlueshiftGameUserSettings::GetBlueprint() const
 	{
 		if (UBlueshiftGameDeveloperSettings::Get()->BlueprintClass.IsNull() == false)
 		{
-			Blueprint = NewObject<UBlueshiftBPGameUserSettings>(const_cast<UBlueshiftGameUserSettings*>(this), UBlueshiftGameDeveloperSettings::Get()->BlueprintClass.LoadSynchronous());
+			if (UClass* const BlueprintClass = UBlueshiftGameDeveloperSettings::Get()->BlueprintClass.LoadSynchronous())
+			{
+				Blueprint = NewObject<UBlueshiftBPGameUserSettings>(const_cast<UBlueshiftGameUserSettings*>(this), BlueprintClass);
+			}
 		}
 	}
 
