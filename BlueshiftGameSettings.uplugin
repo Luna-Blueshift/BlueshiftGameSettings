@@ -1,0 +1,24 @@
+﻿{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Game Settings (Blueshift)",
+	"Description": "Expands user settings capability with Blueprint support for Game User Settings, extra hooks, and a Game Settings framework to help tie UI elements together.",
+	"Category": "Framework",
+	"CreatedBy": "Blueshift Interactive",
+	"CreatedByURL": "https://blueshift-interactive.com/",
+	"DocsURL": "https://github.com/Luna-Blueshift/BlueshiftGameSettings/blob/main/README.md",
+	"MarketplaceURL": "",
+	"EngineVersion": "5.5.0",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "BlueshiftGameSettings",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
